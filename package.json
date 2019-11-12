@@ -1,0 +1,35 @@
+{
+  "name": "cars",
+  "version": "1.0.0",
+  "description": "Tinder Like Car Selling App",
+  "keywords": [],
+  "main": "src/index.js",
+  "dependencies": {
+    "lodash-es": "4.17.15",
+    "react": "16.9.0",
+    "react-dom": "16.9.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.1.1",
+    "react-spring": "9.0.0-beta.34",
+    "react-use-gesture": "6.0.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

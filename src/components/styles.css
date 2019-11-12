@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  user-select: none;
+  color: white;
+  font-family: 'Oleo Script',cursive;
+}
+
+#root {
+  background-image:linear-gradient(to right,#eb3349,#f45c43);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+/* Styles for Swipe Component */
+#root > #swipedivouter {
+  position: fixed;
+  overflow: hidden;
+
+  width: 100vw;
+  height : 100vh;
+  min-width: 300px; 
+  height: 80vh;
+  will-change: transform;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#root > #swipedivouter > #swipedivinner {
+  background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 7px;
+  height: 75vh;
+  max-height: 570px;
+  will-change: transform;
+  cursor: url('cursor.png') 39 39, auto;
+
+  box-shadow: 0 12.5px 5px -10px rgba(50, 50, 73, 0.4), 0 10px 10px -10px rgba(50, 50, 73, 0.3); 
+}
+
+#root > #swipedivouter > #swipedivinner > p {
+  position: absolute;
+  bottom: 0;
+  left:10px;
+  font-size:30px;
+  color:white;
+}
+
+
+
+/* Styles for head component */
+#head
+{
+  position: absolute;
+  top:0;
+  text-align: center;
+}
+#head > nav{
+  font-size: 25px;
+}
+
+
+
+/* Styles for bottom component */
+#bottom
+{
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
+  bottom:1vw;
+}
+
+
+
+/* Styles for Selling Page */
+
+
+#mainDiv
+{
+  width: 100vw;
+  height: 140vh;
+  margin-top: 0;
+  background-size: 100%  !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-image:linear-gradient(to right,  #ece9e6, #e5e5e5);
+  color: black !important;
+
+}
+#title
+{
+  padding: 18px;
+  margin-top: 35vh;
+  text-align: center;
+  background-image:linear-gradient(to right,  #ece9e6, #e5e5e5);
+}
+#title > img
+{
+  width: 40vw;
+  float: left;
+}
+.elementContainer
+{
+  width:100vw;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 5vh;
+  background-image:linear-gradient(to right,  #ece9e6, #e5e5e5); 
+}
+.sphere
+{
+  background-image: url('https://cdn5.vectorstock.com/i/1000x1000/63/64/auto-parts-hand-drawn-vector-11996364.jpg');
+  background-size: 100%;
+  border-radius: 50%;
+  border: solid 3px;
+  height: 150px;
+  width:150px;
+}
+.element
+{
+  width: 150px;
+  float: left;
+  text-align: center;
+}
+
+
+@media only screen and (max-width: 792px) {
+  .elementContainer {
+    padding: 25vw;
+     flex-direction: column;
+  }
+  .element
+  {
+    width: 50vw;
+  }
+  .sphere
+  {
+    height:50vw;
+    width: 50vw;
+  }
+  p
+  {
+    font-size: 40px;
+  }
+  #title > img {
+    width: 100vw;
+    margin-bottom: 20px;
+  }  
+  #root > #swipedivouter > #swipedivinner {
+    background-size: contain;
+  }
+}
+#btnc{
+  background-image:linear-gradient(to right,  #ece9e6, #e5e5e5); 
+}
+
