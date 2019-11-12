@@ -1,5 +1,6 @@
-#car application
+# React based car selling application (Tinder Swipe Based Architecture)
 
-## npm i
-## npm start
+## clone and run following command on cmd
 
+### npm i
+### npm start
