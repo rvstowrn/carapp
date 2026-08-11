@@ -41,6 +41,7 @@ body {
 }
 
 #root > #swipedivouter > #swipedivinner {
+  position: relative;
   background-color: black;
   background-size: cover;
   background-repeat: no-repeat;
@@ -73,6 +74,42 @@ body {
 }
 #head > nav{
   font-size: 25px;
+}
+#switchLinks {
+  font-size: 16px;
+  margin-top: 4px;
+}
+#switchLinks > a {
+  color: white;
+  opacity: 0.6;
+  margin: 0 8px;
+  text-decoration: underline;
+}
+#switchLinks > a.activeLink {
+  opacity: 1;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+
+/* Styles for card game options overlay */
+.cardOptions {
+  position: absolute;
+  bottom: 90px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-evenly;
+  z-index: 5;
+}
+.cardOptions > i {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.85) !important;
+  font-size: 20px !important;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
 }
 
 
@@ -138,6 +175,30 @@ body {
   float: left;
   text-align: center;
 }
+.gameIcon
+{
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: solid 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 70px !important;
+  background-color: #fff;
+  margin: 0 auto;
+}
+.activeSphere .sphere,
+.activeSphere .gameIcon
+{
+  border-color: #eb3349;
+  box-shadow: 0 0 15px 4px rgba(235, 51, 73, 0.7);
+}
+.activeSphere > p
+{
+  font-weight: bold;
+  color: #eb3349;
+}
 
 
 @media only screen and (max-width: 792px) {
@@ -153,6 +214,12 @@ body {
   {
     height:50vw;
     width: 50vw;
+  }
+  .gameIcon
+  {
+    height: 50vw;
+    width: 50vw;
+    font-size: 30vw !important;
   }
   p
   {
