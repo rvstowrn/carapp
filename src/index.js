@@ -6,6 +6,7 @@ import Sell from './components/sell'
 import Heading from './components/heading.js'
 import CardDeck from './components/cardDeck.js'
 import CardDetail from './components/cardDetail.js'
+import TopTrumps from './components/topTrumps.js'
 function Index(){
   return(
     <Router>
@@ -15,6 +16,7 @@ function Index(){
           <Route path="/Sell/:id" exact component={Sell} />
           <Route path="/CardGames" exact component={CardDeck} />
           <Route path="/CardGames/Play/:id/:tab" exact component={CardDetail} />
+          <Route path="/TopTrumps" exact component={TopTrumps} />
           </Switch>
     </Router>
   );

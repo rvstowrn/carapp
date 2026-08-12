@@ -5,20 +5,28 @@
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
     "lodash-es": "4.17.15",
     "react": "16.9.0",
     "react-dom": "16.9.0",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.1.1",
     "react-spring": "9.0.0-beta.34",
-    "react-use-gesture": "6.0.8"
+    "react-use-gesture": "6.0.8",
+    "socket.io": "^4.7.5",
+    "socket.io-client": "^4.7.5"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "server": "node server/index.js",
+    "dev": "concurrently -n CLIENT,SERVER -c blue,green \"npm start\" \"npm run server\""
   },
   "browserslist": {
     "production": [

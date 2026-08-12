@@ -234,6 +234,128 @@ body {
   }
 }
 #btnc{
-  background-image:linear-gradient(to right,  #ece9e6, #e5e5e5); 
+  background-image:linear-gradient(to right,  #ece9e6, #e5e5e5);
+}
+
+
+
+/* Styles for Top Trumps Component */
+#trumpsDiv
+{
+  width: 100vw;
+  min-height: 100vh;
+  padding-top: 18vh;
+  padding-bottom: 5vh;
+  display: flex;
+  justify-content: center;
+}
+.trumpsPanel
+{
+  width: 90vw;
+  max-width: 420px;
+  text-align: center;
+}
+.trumpsError
+{
+  background: rgba(0,0,0,0.3);
+  border-radius: 6px;
+  padding: 10px;
+}
+.trumpsLobby p, .trumpsGame p
+{
+  font-size: 20px;
+}
+.trumpsInput
+{
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 15px 0;
+  border-radius: 6px;
+  border: none;
+  font-size: 18px;
+  text-align: center;
+  font-family: inherit;
+}
+.trumpsBtn
+{
+  background-color: white;
+  color: #eb3349;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-family: inherit;
+  cursor: pointer;
+}
+.trumpsScoreRow
+{
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.trumpsPot
+{
+  font-size: 16px;
+  opacity: 0.85;
+}
+.trumpsTurn
+{
+  font-weight: bold;
+}
+.trumpCard
+{
+  background-color: rgba(0,0,0,0.35);
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px 0;
+}
+.trumpCard h3 { margin: 0; }
+.trumpCard h4 { margin: 0 0 10px 0; font-weight: normal; opacity: 0.85; }
+.trumpCard ul { list-style: none; padding: 0; margin: 0; }
+.trumpCard li { margin: 6px 0; }
+.statRow, .statBtn
+{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 6px;
+  background-color: rgba(255,255,255,0.15);
+  font-size: 17px;
+  font-family: inherit;
+  color: white;
+  border: none;
+  box-sizing: border-box;
+}
+.statBtn
+{
+  cursor: pointer;
+}
+.statBtn:hover
+{
+  background-color: rgba(255,255,255,0.35);
+}
+.trumpsLastRound
+{
+  font-size: 16px;
+  font-style: italic;
+}
+.trumpsLog
+{
+  list-style: none;
+  padding: 0;
+  margin: 15px 0 0 0;
+  text-align: left;
+  font-size: 14px;
+  opacity: 0.8;
+  max-height: 150px;
+  overflow-y: auto;
+}
+.trumpsLog li
+{
+  padding: 4px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
 }
 
